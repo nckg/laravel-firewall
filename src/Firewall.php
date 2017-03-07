@@ -47,7 +47,7 @@ class Firewall
         foreach ($this->allowed as $pattern) {
 
             if ((bool) preg_match('/(\d+)\/(\d+)/u', $pattern, $matches)) {
-                for ($i = (int) $matches[1]; $i < (int) $matches[2]; $i++) {
+                for ($i = (int) $matches[1]; $i <= (int) $matches[2]; $i++) {
                     $patterns[] = preg_replace('/\d+\/\d+/u', $i, $pattern);
                 }
             } else {
