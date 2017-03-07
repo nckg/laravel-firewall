@@ -29,6 +29,17 @@ class FirewallTest extends TestCase
 
         $firewall = new Firewall(['128.*.*.*']);
         $this->assertTrue($firewall->isAllowed('128.0.0.1'));
+        $this->assertFalse($firewall->isAllowed('129.0.0.1'));
+
+        // Match a range with regex
+        $firewall = new Firewall(['128.0.0.1/200']);
         $this->assertTrue($firewall->isAllowed('128.0.0.1'));
+        $this->assertFalse($firewall->isAllowed('128.0.0.255'));
+
+        // Match a range with regex
+        $firewall = new Firewall(['128.0.1/200.*']);
+        $this->assertTrue($firewall->isAllowed('128.0.120.1'));
+        $this->assertFalse($firewall->isAllowed('128.0.255.1'));
+        $this->assertFalse($firewall->isAllowed('128.0.0.255'));
     }
 }
