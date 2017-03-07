@@ -1,0 +1,33 @@
+{
+    "name": "nckg/laravel-firewall",
+    "description": "A small Laravel package to help you block IP addresses from accessing your application",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Goris",
+            "email": "nickgoris@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "^7.0"
+    },
+    "require-dev": {
+        "illuminate/support": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
+        "phpunit/phpunit": "5.*",
+        "orchestra/testbench": "^3.2",
+        "mockery/mockery": "^0.9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nckg\\Firewall\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nckg\\Firewall\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
