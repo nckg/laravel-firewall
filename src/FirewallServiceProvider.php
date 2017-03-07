@@ -19,4 +19,13 @@ class FirewallServiceProvider extends ServiceProvider
             __DIR__ . '/config/firewall.php' => config_path('firewall.php'),
         ]);
     }
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+    }
 }
