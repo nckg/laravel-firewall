@@ -12,6 +12,22 @@ You can install the package via composer:
 ``` bash
 composer require nckg/laravel-firewall
 ```
+
+Add the `FirewallServiceProvider` to you `config/app.php` file.
+
+```php
+// config/app.php
+'providers' => [
+    ...
+    Nckg\Firewall\FirewallServiceProvider::class,
+    ...
+]
+```
+
+Publish the configuration file to your configuration path:
+
+    php artisan vendor:publish --provider="Nckg\Firewall\FirewallServiceProvider"
+
 If you are using Laravel you can add the middleware to your middleware providers
 
 ```php
