@@ -18,7 +18,7 @@ class IpAccess
      */
     public function handle($request, Closure $next)
     {
-        if (! (new Firewall(config('firewall.whitelist')))->isAllowed($request->ip())) {
+        if ((new Firewall(config('firewall.whitelist')))->isAllowed($request->ip()) == false) {
             throw new UnauthorizedHttpException('Unauthorized');
         }
 
