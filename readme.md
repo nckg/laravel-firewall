@@ -39,7 +39,7 @@ If you are using Laravel you can add the middleware to your middleware providers
  */
 protected $middleware = [
     ...
-    \Nckg\Firewall\Middleware\IpAccess.php::class,
+    \Nckg\Firewall\Middleware\IpAccess::class,
 ];
 ```
 
