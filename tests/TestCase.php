@@ -1,6 +1,6 @@
 <?php
 
-namespace Nckg\Firewall\Test;
+namespace Getlashified\Firewall\Test;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 

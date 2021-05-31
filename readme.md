@@ -1,34 +1,31 @@
-# HTML minifier
-[![Build Status](https://travis-ci.org/nckg/laravel-firewall.svg?branch=master)](https://travis-ci.org/nckg/laravel-firewall) [![Packagist](https://img.shields.io/packagist/v/nckg/laravel-firewall.svg?maxAge=2592000?style=flat-square)](https://github.com/nckg/laravel-firewall) [![Packagist](https://img.shields.io/packagist/dt/nckg/laravel-firewall.svg?maxAge=2592000?style=flat-square)](https://github.com/nckg/laravel-firewall)
-
 ## Introduction
 
-Very simple package to allow access to your Laravel application by IP.
+This package for the [Laravel Framework](https://laravel.com/) will make it easy to help you block specified IP
+addresses from accessing your application.
 
 ## Installation
 
 You can install the package via composer:
 
 ``` bash
-composer require nckg/laravel-firewall
+composer require getlashified/laravel-firewall
 ```
 
 Add the `FirewallServiceProvider` to you `config/app.php` file.
 
 ```php
-// config/app.php
 'providers' => [
     ...
-    Nckg\Firewall\FirewallServiceProvider::class,
+    Getlashified\Firewall\FirewallServiceProvider::class,
     ...
 ]
 ```
 
 Publish the configuration file to your configuration path:
 
-    php artisan vendor:publish --provider="Nckg\Firewall\FirewallServiceProvider"
+    php artisan vendor:publish --provider="Getlashified\Firewall\FirewallServiceProvider"
 
-If you are using Laravel you can add the middleware to your middleware providers
+If you are using Laravel you can add the middleware to your middleware providers:
 
 ```php
 // app/Http/Kernel.php
@@ -39,7 +36,7 @@ If you are using Laravel you can add the middleware to your middleware providers
  */
 protected $middleware = [
     ...
-    \Nckg\Firewall\Middleware\IpAccess::class,
+    \Getlashified\Firewall\Middleware\IpAccess::class,
 ];
 ```
 
@@ -49,6 +46,11 @@ protected $middleware = [
 composer test
 ```
 
+## Credits
+
+The original author for this package is [Nick Goris](https://github.com/nckg/laravel-firewall). I have forked the
+project to maintain it as he stopped developing and supporting it.
+
 ## License
 
-The MIT License (MIT).
+The MIT License (MIT). Please see [License File](LICENSE) for more information.

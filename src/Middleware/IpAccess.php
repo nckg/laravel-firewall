@@ -1,9 +1,9 @@
 <?php
 
-namespace Nckg\Firewall\Middleware;
+namespace Getlashified\Firewall\Middleware;
 
 use Closure;
-use Nckg\Firewall\Firewall;
+use Getlashified\Firewall\Firewall;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class IpAccess
@@ -12,7 +12,7 @@ class IpAccess
      * Handle an incoming request.
      *
      * @param \Illuminate\Http\Request $request
-     * @param \Closure                 $next
+     * @param \Closure $next
      *
      * @return mixed
      */

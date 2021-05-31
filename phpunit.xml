@@ -8,7 +8,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Nckg Test Suite">
+        <testsuite name="Getlashified Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

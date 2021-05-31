@@ -1,33 +1,34 @@
 {
-    "name": "get-lashified/laravel-firewall",
-    "description": "A small Laravel package to help you block IP addresses from accessing your application",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Lashveen Mahabal",
-            "email": "lash5274@gmail.com"
-        }
-    ],
-    "require": {
-        "php": "^7.4|^8.0",
-    },
-    "require-dev": {
-        "illuminate/support": "^8.4.4",
-        "phpunit/phpunit": "^9.5.4",
-        "orchestra/testbench": "^6.18.0",
-         "mockery/mockery": "^1.4",
-    },
-    "autoload": {
-        "psr-4": {
-            "Nckg\\Firewall\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Nckg\\Firewall\\Test\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit"
+  "name": "getlashified/laravel-firewall",
+  "description": "A Laravel package to help you block specified IP addresses from accessing your application.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lashveen Mahabal",
+      "email": "lash5274@gmail.com",
+      "role": "Software Developer"
     }
+  ],
+  "require": {
+    "php": "^7.4|^8.0"
+  },
+  "require-dev": {
+    "illuminate/support": "^8.4.4",
+    "phpunit/phpunit": "^9.5.4",
+    "orchestra/testbench": "^6.18.0",
+    "mockery/mockery": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Getlashified\\Firewall\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Getlashified\\Firewall\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
 }

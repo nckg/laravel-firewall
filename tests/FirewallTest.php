@@ -1,9 +1,9 @@
 <?php
 
-namespace Nckg\Firewall\Test;
+namespace Getlashified\Firewall\Test;
 
-use Nckg\Firewall\Firewall;
-use Nckg\Firewall\Minifier;
+use Getlashified\Firewall\Firewall;
+use Getlashified\Firewall\Minifier;
 
 class FirewallTest extends TestCase
 {
