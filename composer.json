@@ -1,21 +1,21 @@
 {
-    "name": "nckg/laravel-firewall",
+    "name": "get-lashified/laravel-firewall",
     "description": "A small Laravel package to help you block IP addresses from accessing your application",
     "license": "MIT",
     "authors": [
         {
-            "name": "Nick Goris",
-            "email": "nickgoris@gmail.com"
+            "name": "Lashveen Mahabal",
+            "email": "lash5274@gmail.com"
         }
     ],
     "require": {
-        "php" : "^7.0"
+        "php": "^7.4|^8.0",
     },
     "require-dev": {
-        "illuminate/support": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
-        "phpunit/phpunit": "5.*",
-        "orchestra/testbench": "^3.2",
-        "mockery/mockery": "^0.9.4"
+        "illuminate/support": "^8.4.4",
+        "phpunit/phpunit": "^9.5.4",
+        "orchestra/testbench": "^6.18.0",
+         "mockery/mockery": "^1.4",
     },
     "autoload": {
         "psr-4": {
